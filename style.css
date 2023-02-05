@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+header{
+    background-color:whitesmoke;
+    width: 100%;
+    padding: 1.4rem;
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo css  */
+
+.logo{
+    color:rgb(67, 193, 193) ;
+}
+.logo span{
+    color: grey;
+}
+.logo h1{
+    font-family: cursive;
+    font-size: 30px;
+}
+
+ /* nav bar css */
+
+nav a{
+    color: rgb(67, 193, 193);
+    font-size: 1.7rem;
+    margin: 0 1.5rem;
+}
+nav a:hover{
+    color: gray;
+    border-bottom: 4px solid rgb(48, 196, 201);
+}
+.menu-icons{
+    color: rgb(67, 193, 193);
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+.menu-icons:hover{
+    color: grey;
+    border-bottom: 4px solid rgb(48, 196, 201);
+
+}
+#menu-bar{
+    display: none;
+}
+
+/* home page content css start  */
+
+.content{
+    background-image:url(HOSPITAL\ bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-start;
+    color: rgb(64, 193, 204);
+    height: 100vh;
+}
+.content h1{
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    padding: 1rem 0;
+}
+.content h2{
+    font-size: 45px;
+    color: rgb(248, 142, 159);
+    font-style: italic;
+}
+.content p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(64, 193, 204);
+    padding: 2rem 0;
+    padding-right: 35rem;
+}
+
+/* our service css start  */
+
+.heading{
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 2rem;
+    /* text-shadow: chartreuse; */
+    text-transform: uppercase;
+    color: aquamarine;
+    font-size: 4rem;
+    letter-spacing: .4rem;
+}
+.heading span{
+    text-transform: uppercase;
+    color: gray;
+}
+
+/* all button css */
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: rgb(28, 211, 86);
+    border-radius: 1rem;
+    box-shadow: rgb(64, 190, 159);
+    color: rgb(35, 35, 35);
+    cursor: pointer;
+    font-size: 1.5rem;
+    background:  #b2e4e4;
+}
+.btn span{
+    padding:.4rem .5rem;
+    border-radius: 1rem;
+    color:rgb(30, 31, 31);
+    margin-left: .5rem;
+}
+.btn:hover{
+    background: pink;
+    color:black;
+}
+.btn:hover span{
+    color: var(--green);
+    background:rgb(168, 229, 214);
+    margin-left: 1rem;
+} 
+
+/* service box css start  */
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:2rem;
+}
+.services .box-container .box{
+    background: whitesmoke;
+    border-radius: .5rem;
+    box-shadow: black;
+    border: black;
+    padding: 2.5rem;
+}
+
+.services .box-container .box i{
+    color: pink;
+    font-size: 5rem;
+    padding-bottom:.5rem ;
+}
+.services .box-container .box h3{
+    color: rgb(60, 200, 165);
+    font-family: 'Gill Sans';
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.doctors .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:2rem;
+}
+.doctors .box-container .box{
+    text-align: center;
+    background:whitesmoke;
+    border-radius: .5rem; 
+    padding:1rem;
+}
+.doctors .box-container .box img{
+    height: 300px;
+    width: 70%;
+    border: #e0dddd;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ourdoctors{
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 100px;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 4rem;
+    letter-spacing: .4rem;
+    /* border-bottom: aquamarine; */
+}
+.ourdoctors span{
+    text-transform: uppercase;
+    color: aquamarine;
+    /* border-top: grey; */
+}
+.doctors .box-container h3{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    padding: .5rem 0;
+}
+.doctors .box-container span{
+    color: rgb(12, 114, 107);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    padding: .5rem 0;
+}
+
+
+/* appointment css  */
+
+
+.appointment .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.appointment .row .img{
+    flex:1 1 45rem;
+    height: 80vh;
+}
+.appointment .row .img img{
+    width: 100%;
+}
+.appointment .row form h3{
+    color:rgb(65, 186, 197);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-family: 'Lucida Sans';
+}
+.appointment .row form{
+    flex:1 1 40rem;
+    background:whitesmoke;
+    border:black;
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.appointment .row form .box{
+    width: 80%;
+    margin:.5rem 0;
+    border-radius: 1rem;
+    border:black;
+    font-size: 1.6rem;
+    color: rgb(76, 76, 76);
+    text-transform: none;
+    padding: 1rem;
+}
+.appointment .row form .btn{
+    padding:1rem 6rem;
+}
+
+/* footer css  */
+
+.footer .contacts{
+    background-color:whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap:1rem;
+}
+.footer .contacts .box h3{
+    font-size: 1.5rem;
+    color:rgb(251, 137, 156);
+    padding: 1rem 0;
+}
+.footer .contacts .box a{
+    display:block;
+    font-size: 1.1rem;
+    color:rgb(66, 185, 145);
+    padding: 1rem 0;
+    
+}
+.footer .contacts .box a:hover{
+    color: rgb(215, 112, 129);
+    
+}
+.footer .contacts .box a i{
+    padding-right: .5rem;
+    color:rgb(66, 185, 145);
+}
+.footer .contacts .box a:hover i{
+    padding-right:2rem;
+}
+.footer .credit{
+    padding: 1rem;
+    padding-top: .5rem;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    color:rgb(56, 180, 138);
+    border-top: .1rem solid rgb(131, 131, 131);
+}
+/* footer css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+    html{
+        font-size:55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    #menu-bar{
+        display:initial;
+    }
+    nav{
+        position: absolute;
+        top: 80%;
+        left: 10;
+        background:rgb(202, 202, 202) ;
+        width: 50%;
+        height: 40vh;
+    }
+
+    nav a{
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    /* .menu-icons div{
+        color: bisque;
+        font-size: 2rem;
+        margin-left: 1.5rem;
+    } */
+    /* #menu-bar{
+        display: none;
+    } */
+    
+    .content{
+        padding-top: 8%;
+    }
+    
+
+}
